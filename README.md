@@ -16,3 +16,6 @@ Complete the HTML development of the page and submit a pull request to main bran
 - Making it resoponsive for mobile is optinoal. 
 
 Your HTML page will be reviewed against following points 
+- Developed UI will be validated against the designs shared
+- Redability and reusability of code will be checked.
+- Code quality and Code size will be reviewed.
