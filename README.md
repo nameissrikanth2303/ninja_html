@@ -14,8 +14,9 @@ Complete the HTML development of the page and submit a pull request to main bran
 - Contact Us should trigger mailto: info@designstring.com
 - LinkedIn URL for profiles can be link to https://www.linkedin.com/ or no need to link
 - Making it resoponsive for mobile is optinoal. 
+- In `Why Designstring` section on clicking over feature listed on the left side, image on the right side has to change respectfully. (Images shared on designs).
 
 Your HTML page will be reviewed against following points 
-- Developed UI will be validated against the designs shared
-- Redability and reusability of code will be checked.
+- Developed UI will be validated against the designs shared.
+- Readability and reusability of code will be checked.
 - Code quality and Code size will be reviewed.
