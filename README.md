@@ -9,7 +9,7 @@ Assets can be exported from the Figma file or can be found under resources folde
 **Goal**: HTML static development of the single page as shown in the resource URL
 
 **Description**:
-Complete the HTML development of the page and submit a pull request to main branch.
+Complete the HTML development of the page and **submit a pull request** to main branch.
 - Use frontend frameworks like Bootstrap or Material-UI.
 - Contact Us should trigger mailto: info@designstring.com
 - LinkedIn URL for profiles can be link to https://www.linkedin.com/ or no need to link
