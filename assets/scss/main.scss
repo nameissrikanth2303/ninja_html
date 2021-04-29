@@ -1,0 +1,359 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,500;1,100;1,200;1,400&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+// colors
+$primary-yellow: #FFB900;
+$primary-blue:#00248A;
+
+$black:#040C21;
+
+
+// typography
+
+$primary-font: 'Inter', sans-serif;
+$bold:700;
+
+body{
+    background:  #FFF;
+    font-size: 16px;
+    font-family: $primary-font;
+   
+}
+body::-webkit-scrollbar {
+    width: 1em;
+  }
+
+// mis
+$border-radius: 8px;
+
+
+// Nav-bar
+.navigation{
+width: 90%;
+margin: auto;
+padding: 35px;
+
+.navbar-light .navbar-nav .nav-link {
+    color: $black;
+    font-weight: $bold;
+    font-size: 16px;
+    font-family: $primary-font;
+    margin: auto 15px;
+}
+}
+
+
+
+.ver-seprtor{
+    color: rgba(0, 68, 0, 0.2);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Buttons
+
+.btn{
+    background-color:$primary-yellow ;
+    padding: 10px 25px !important;
+    font-size: 16px;
+    font-weight: $bold;
+    font-family: $primary-font;
+    color: $black;
+    border-radius: $border-radius;
+    &:hover{
+        background-color: #FFDC80;
+        color: $primary-blue !important;
+    }
+    &:focus{
+        background-color: #FFDC80;
+        color: $primary-blue !important;
+        box-shadow: 0 0 0 0.2rem $primary-blue
+    }
+
+    &:active{
+background-color: $primary-blue !important;
+color: $primary-yellow !important;
+    }
+
+}
+
+.link{
+  color: $black;
+  font-family: $primary-font;
+  font-weight: 500;
+    &:hover{
+        color: $black;
+        text-decoration: none;
+    }
+}
+
+
+.contet-wrapper{
+    width: 90%;
+    margin: auto;
+    padding: 10px 50px;
+}
+
+
+.hero{
+    padding: 34px 25px;
+}
+.hero-left{
+    font-family: $primary-font;
+    font-size: 46px !important;
+    text-align: left;
+    padding:  25px;
+   margin-top: 100px;
+
+}
+
+.bolder{
+   font-weight: $bold;
+}
+
+.section-title{
+    font-family:$primary-font;
+    font-weight: $bold;
+    font-size: 32px;
+}
+
+// .height-115{
+//     height: 115vh;
+// }
+
+.section-bg{
+    background-color: #F5F6FA;
+    background-image: url('../images/bg_pattern.png');
+    background-position: right top;
+    background-repeat: no-repeat;
+    height: 50vh;
+}
+.card{
+    padding: 10px 25px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.4;
+    &.active{
+        opacity: 3;
+        .card-svg{
+           svg  rect{
+               fill:#E6EAF4
+           }
+        }
+    }
+    .card-icon{
+        width: 30%;
+        .card-svg{
+            margin-top: 23px;
+        }
+    }
+    .card-title{
+  padding: 10px 5px;
+        color: $primary-blue;
+        font-weight: 600;
+        font-size: 24px;
+        width: 85%;
+        text-align: left;
+        margin-left: 20px;
+    }
+    .card-dec{
+    display: block;
+        font-size: 16px;
+        margin-top: -32px;
+        margin-left: 90px;
+    }
+    &:hover{
+        opacity: 2;
+    }
+
+    
+}
+
+.testimonial{
+
+    .owl-carousel{
+        position: absolute;
+    }
+    .owl-carousel .owl-nav.disabled {
+         display:block !important; 
+    }
+
+    .owl-nav .nav-btn {
+        background: transparent;
+        border: none;
+        position: relative;
+        margin: 0px -5px;
+        cursor: pointer;
+        position: absolute;
+        left: 101%;
+    top: 50%;
+        &:focus{
+            outline: none;
+        }
+    }
+
+    .new-phara{
+        margin-top: 10px;
+    }
+    .queots{
+      img{
+          width: 1% !important;
+      }
+      
+    }
+    
+    
+    .testimonial-title{
+
+        color: $primary-blue;
+        font-weight: 600;
+        font-size: 24px;
+    }
+    .item{
+        margin-top: 5%;
+    }
+}
+
+.image-card{
+    border-radius: $border-radius;
+    opacity: 1;
+    margin-top: 5%;
+    width: 100%;
+    height: 50vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    .card-img{
+        width: 100%;
+        height: 100%;
+      
+    }
+
+    .card-arrow{
+        margin-top: 10px;
+        // margin-top: 100%;
+        position: relative;
+        top: 80%;
+        img{
+            width: 100%;
+        
+        }
+    }
+
+    .card-img-overlay{
+        border-radius: $border-radius;
+     
+        visibility: hidden;
+    
+    
+        .card-text{
+            position: relative;
+            top: 80%;
+            h6, p{
+                font-weight: 600;
+                font-size: 24px;
+                color: #fff;
+                margin-bottom: 0px;
+            }
+            p{
+                font-size: 16px;
+            }
+        }
+    }
+    &:hover{
+      
+   opacity: 0.8;
+        
+        backdrop-filter: blur(16px);
+        
+        // background: rgba(0, 36, 138, 0.8);
+        .card-img-overlay{
+            background: rgba(0, 36, 138, 0.8);
+     
+            visibility:visible  !important;
+         
+        }
+        .card-text{
+            opacity: 1 !important;
+            position: relative;
+            z-index:9999999999 ;
+           
+        }
+    }
+   
+
+
+}
+
+
+
+.Sponcered-section{
+ 
+    margin-top: 18%;
+    .heaidng{
+        font-family: "Work Sans" sans-serif !important;
+        font-weight: 400;
+        font-size: 24px;
+        color: $black;
+        opacity: 0.5;
+        text-transform: capitalize;
+    }
+}
+
+.subscribe-section{
+    background: #FFFFFF;
+mix-blend-mode: normal;
+box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.25);
+margin-top: 5%;
+
+.details{
+    margin-top: 5%;
+}
+
+}
+
+.input-group{
+   
+    width: 80%;
+margin: auto;
+margin-top: 5%;
+    .form-control{
+        background: rgba(0, 0, 0, 0.08);
+        border-radius: 8px;
+        width: 60%;
+        padding: 10px 15px;
+    }
+    .btn{
+        float: right !important;
+        margin-left: 68%;
+    }
+}
+.footer{
+    background-color: #E8E9EB;
+}
+@media screen and (max-width:786px) {
+
+    .section-bg{
+        height: 80vh;
+    }
+}
